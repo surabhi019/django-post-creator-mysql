@@ -1,0 +1,8 @@
+Posts 
+<ol>
+    {% for post in posts %}
+        <li><a href="/get_post/{{ post.id }}"> {{ post.title }}</a></li>
+    {% endfor %}
+</ol>
+
+<a href="/create_post">Create Post</a>
